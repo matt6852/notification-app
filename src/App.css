@@ -1,0 +1,32 @@
+.notification {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffd700;
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.notification-enter {
+  opacity: 0.01;
+  transform: translateY(100%);
+}
+
+.notification-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.notification-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.notification-exit-active {
+  opacity: 0.01;
+  transform: translateY(100%);
+  transition: opacity 300ms, transform 300ms;
+}
